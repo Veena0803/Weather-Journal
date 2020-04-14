@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL MAIN CONTAINER */
+.header {
+  height: 70px;
+  width: 100%;
+  background: #000;
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+}
+
+h3 {
+  color: orange;
+}
+
+/* CONTENT CONTAINER */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(91, 89, 131);
+  padding: 20px 20px;
+}
+
+
+.zipcode-container, .feelings-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* GENERATE BUTTON */
+.zip-feel-holder button {
+  background-color: transparent;
+  border: 3px solid #f0d43a;
+  color: #f0d43a;
+  display: block;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.zip-feel-holder button:hover {
+  background-color: #f0d43a;
+  color: #3b4a6b;
+  transition: all 0.2s ease;
+}
+
+.feelings, 
+.zipcode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.zipcode label {
+  font-size: 20px;
+  font-family: Verdana;
+  margin-bottom: 10px;
+}
+
+.feelings label {
+  font-size: 20px;
+  font-family: Verdana;
+  margin-bottom: 10px;
+}
+
+.feelings-holder textarea, 
+.zipcode input, textarea {
+  background-color: #fff;
+  border: solid 1px #000;
+  color: grey;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  width: 200px;
+}
+
+.feelings-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.generate {
+  margin-left: 20px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#date, #temp, #content {
+  padding: 10px;
+}
+
+/* Reset style for HTML element on active to have no border */
+input:focus, 
+select:focus, 
+textarea:focus, 
+button:focus {
+  outline: none;
+}
+
+/* RESPONSIVNESS */
+@media (min-width: 700px) {
+
+  .wj-section-journal-recent {
+    grid-template-areas: "date temperature" "feelings feelings";
+    grid-template-rows: 70px 1fr;
+  }
+
+  #temp {
+    align-items: flex-end;
+  }
+
+  .zip-holder {
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .zip-holder input {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 98%;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+  
+  .form {
+    width: 49%;
+    height: 400px;
+    float: left;
+    background-color: beige;
+    border: solid 1px #000;
+  }
+  
+  .result {
+    margin-left: 50%;
+    height: 400px;
+    background-color: beige;
+    border: solid 1px #000;
+  }
+
+  .output {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .output h2 {
+    text-align: center;
+  }
+
+  .result-content {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}

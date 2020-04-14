@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <div class="header">
+      <header>
+        <nav>
+            <h3><br/>Veena Iyer - Weather Journal App</h3>
+        </nav>
+      </header>
+    </div>
+    
+    <div class="container">
+      <div class="form">
+        <section class="zipcode-container">
+          <div class="zipcode">
+            <label for="zip">
+              Enter Zipcode here
+            </label>
+            <input id="zip" placeholder="Enter zip code here" type="text">
+          </div>
+                
+          <div class="feelings-container">
+            <div class="feelings">
+              <label for="feelings">
+                How are you feeling today?
+              </label>
+              <textarea id="feelings" placeholder="Enter your feelings here" rows="7"></textarea>
+            </div>
+          </div>
+          <button id="generate" class="generate">Generate</button>
+        </section>
+      </div>
+      <div class="result">
+        <section class="output">
+          <h2>Results</h2>
+          <br/><br/>
+          <div id="entryHolder" class="result-content">
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+  </div>
+  </body>
+</html>
